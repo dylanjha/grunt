@@ -10,4 +10,4 @@ ONBUILD ADD bower.json /app/
 ONBUILD RUN bower install --allow-root
 ONBUILD ADD . /app
 
-CMD [ "grunt" ]
+CMD [ "grunt", "serve" ]
