@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y build-essential && apt-get install -y n
 WORKDIR /app
 
 ONBUILD ADD . /app
+ONBUILD RUN pwd && ls -al
 ONBUILD RUN npm install
 ONBUILD RUN bower install --allow-root
 
