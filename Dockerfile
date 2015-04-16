@@ -9,4 +9,4 @@ ONBUILD RUN pwd && ls -al
 ONBUILD RUN npm install
 ONBUILD RUN bower install --allow-root
 
-CMD [ "grunt", "serve" ]
+CMD grunt serve
