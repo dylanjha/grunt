@@ -7,7 +7,7 @@ RUN apt-get update && \
   git-core \
   nodejs-legacy \
   npm \
-  npm install -g grunt-cli bower
+  && npm install -g grunt-cli bower
 
 WORKDIR /app
 
