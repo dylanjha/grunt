@@ -12,11 +12,9 @@ RUN apt-get update && \
 WORKDIR /app
 
 ONBUILD ADD package.json /app/package.json
-ONBUILD RUN npm install
 ONBUILD ADD bower.json /app/bower.json
-ONBUILD RUN bower install --allow-root
 
 ONBUILD ADD . /app
 
-CMD [ "grunt", "serve" ]
+CMD [ "npm", "install", "&&", "bower", "install", "&&", "grunt" ]
 
