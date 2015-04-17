@@ -4,7 +4,7 @@ MAINTAINER Dylan Jhaveri <dylan@mustwin.com>
 RUN apt-get update && \
   apt-get install -y \
   build-essential \
-  git-core -y && \
+  git-core \
   nodejs-legacy \
   npm \
   npm install -g grunt-cli bower
