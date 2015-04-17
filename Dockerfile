@@ -19,3 +19,4 @@ ONBUILD RUN bower install --allow-root
 ONBUILD ADD . /app
 
 CMD [ "grunt", "serve" ]
+
